@@ -1,0 +1,10 @@
+[Unit]
+Description=Runs the ClamAV service based on a periodic schedule
+Requires=ClamAV.service
+
+[Timer]
+Unit=ClamAV.service
+OnCalendar=*-*-* 02:00:00
+
+[Install]
+WantedBy=timers.target

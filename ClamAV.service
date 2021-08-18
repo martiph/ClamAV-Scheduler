@@ -1,0 +1,11 @@
+[Unit]
+Description=This service runs a ClamAV scan
+
+[Service]
+Type=simple
+ExecStart=/opt/scripts/periodic-clamavscan.sh
+Restart=on-failure
+User=root
+
+[Install]
+WantedBy=multi-user.target
