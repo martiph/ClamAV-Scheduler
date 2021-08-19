@@ -3,7 +3,7 @@ Description=This service runs a ClamAV scan
 
 [Service]
 Type=simple
-ExecStart=/opt/scripts/periodic-clamavscan.sh
+ExecStart=/opt/custom_clamscan/custom_clamscan.sh
 Restart=on-failure
 User=root
 
